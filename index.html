@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Input Buttons</title>
+</head>
+
+<body>
+    <div class="header">LED PANEL</div>
+    <div class="container">
+        <div class="input-list">
+            <!-- <div class="input-item">
+                <input type="text" placeholder="Input 1">
+                <button class="edit-button">Edit</button>
+                <button class="delete-button">Delete</button>
+            </div> -->
+        </div>
+        <div class="group">
+            <!-- <button class="add-button">Add Input</button> -->
+            <div class="button-wrap">
+                <div class="button-icon">+</div>
+                 <a href="./template/add.html" class="button">Thêm mới nội dung</a>
+            </div>
+           
+            <a href="./template/inforWifi.html" class="button-infor">Thông tin wifi</a>
+        </div>
+
+    </div>
+    <div class="brightness-slider">
+        <input type="range" id="percentageSlider" value="50" min="0" max="100">
+        <div class="percentageSlider-text"> <i class="fas fa-sun percentageSlider-icon"></i>
+            <span id="percentageValue">50%</span>
+        </div>
+    </div>
+    <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
