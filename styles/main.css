@@ -99,10 +99,10 @@ body {
     outline: none;
     font-size: 15px;
     padding-left: 15px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  background-color: #d2d3d5;
-  color: #000;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #d2d3d5;
+    color: #000;
   }
   
   .edit-button {
@@ -183,7 +183,7 @@ body {
     width: 10px; /* 1 */
     height: 46px;
     background: #fff;
-    box-shadow: -595px 0 0 595px #e5e6e8;
+    /* box-shadow: -595px 0 0 595px #e5e6e8; */
     border: 1px solid #999;
     border-radius: 10px;
 }
@@ -199,7 +199,7 @@ body {
     width: 10px;
     border: 3px solid #999;
     border-radius: 0 !important;
-    /* box-shadow: -200px 0 0 200px dodgerblue; */
+    /* box-shadow: -595px 0 0 595px #e5e6e8; */
     box-sizing: border-box;
 }
 
