@@ -435,7 +435,7 @@ body {
     width: 10px; /* 1 */
     height: 46px;
     background: #fff;
-    box-shadow: -425px 0 0 425px #e5e6e8;
+    /* box-shadow: -425px 0 0 425px #e5e6e8; */
     border: 1px solid #999;
     border-radius: 10px;
 }
@@ -686,7 +686,7 @@ body {
     width: 10px; /* 1 */
     height: 46px;
     background: #fff;
-    box-shadow: -295px 0 0 295px #e5e6e8;
+    /* box-shadow: -295px 0 0 295px #e5e6e8; */
     border: 1px solid #999;
     border-radius: 10px;
 }
