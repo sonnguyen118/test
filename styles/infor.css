@@ -8,7 +8,22 @@ body {
     width: 100vw;
 
 }
-
+.blinking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+.blinking-text {
+  font-size: 40px;
+  animation: blink 1s infinite alternate;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.blinking-text:hover {
+  cursor: pointer;
+}
 .header {
   font-size: 34px;
   text-align: center;
@@ -289,12 +304,18 @@ background-color: #fff;
         background-color: #fff;
         } 
   
-    select{
-      width: 70px;
-      padding: 5px 3px;
-      outline: none;
-      border-radius: 5px;
-    }
+        .form-select {
+          padding: 3px 3px;
+          color: #444;
+          width: 90px;
+          font-size: 12px;
+         }
+         select {
+           outline: 1px solid #ccc;
+           /* border: 1px solid #bebebe; */
+           border-radius: 3px;
+           height: 30px;
+         }
   
     .end {
       border-bottom: 1px solid #000;

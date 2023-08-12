@@ -8,6 +8,33 @@ body {
     width: 100vw;
 
 }
+.blinking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+.blinking-text {
+  font-size: 40px;
+  animation: blink 1s infinite alternate;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.blinking-text:hover {
+  cursor: pointer;
+}
+/* // phần thẻ slect */
+
+.form-select {
+ padding: 3px 3px;
+ width: 90px;
+}
+select {
+  outline: 1px solid #ccc;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+}
 
 .header {
   font-size: 34px;
@@ -117,7 +144,15 @@ input {
     margin-bottom: 20px;
     letter-spacing: 5px;
   }
-  
+  .form-select {
+ padding: 3px 3px;
+ width: 80px;
+}
+select {
+  outline: 1px solid #ccc;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+}
   .container {
     margin: 0 auto;
     max-width: 520px;
@@ -132,7 +167,7 @@ input {
   .container__form-title {
     text-align: center;
     background-color: #858688;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     padding: 3px 0;
     border-top-left-radius: 4px;
@@ -147,12 +182,12 @@ input {
   }
   label {
     width: 70px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
   }
   input {
     width: 80px !important;
-    font-size: 13px;
+    font-size: 14px;
   }
   .d-flex {
     align-items: center;
@@ -191,7 +226,16 @@ input {
     margin-bottom: 20px;
     letter-spacing: 5px;
   }
-  
+  .form-select {
+    padding: 3px 3px;
+    color: #444;
+    width: 100px;
+   }
+   select {
+     outline: 1px solid #ccc;
+     border: 1px solid #bebebe;
+     border-radius: 3px;
+   }
   .container {
     margin: 0 auto;
     max-width: 520px;
@@ -206,7 +250,7 @@ input {
   .container__form-title {
     text-align: center;
     background-color: #858688;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     padding: 3px 0;
     border-top-left-radius: 4px;
@@ -221,21 +265,27 @@ input {
   }
   label {
     width: 80px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
   }
   input {
     width: 100px !important;
-    font-size: 13px;
+    font-size: 14px;
   }
   .d-flex {
     align-items: center;
     justify-content: space-between;
   }
   .d-flexs {
-    display: block !important;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .d-flexs-item {
+    margin-bottom: 8px;
+  }
+  .label-speed {
+    margin-left: 10px;
   }
   .setting {
     display: flex;
@@ -255,6 +305,11 @@ input {
   }
   .item {
     margin-top: 10px !important;
+  }
+  label {
+    position: relative;
+    top: 3px;
+    width: 72px;
   }
 }
 

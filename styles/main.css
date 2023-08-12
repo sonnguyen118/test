@@ -8,16 +8,6 @@ body {
       width: 100vw;
   
   }
-
-  .header {
-    font-size: 34px;
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 12%;
-    margin-bottom: 60px;
-    letter-spacing: 8px;
-  }
   
   .container {
     margin: 0 auto;
@@ -255,19 +245,36 @@ body {
   font-size: 15px;
 }
 
+/* // css phần chữ */
+
+@keyframes blink {
+  from {
+    color: red;
+  }
+  to {
+    color: green;
+  }
+}
+.blinking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+.blinking-text {
+  font-size: 40px;
+  animation: blink 1s infinite alternate;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.blinking-text:hover {
+  cursor: pointer;
+}
 
 /* // response */
 @media screen and (min-width: 456px) and (max-width: 768px) {
 
-  .header {
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    margin-top: 5%;
-    margin-bottom: 40px;
-    letter-spacing: 5px;
-  }
-  
   .container {
     margin: 0 auto;
     max-width: 430px;
@@ -510,18 +517,9 @@ body {
 }
 
 @media screen and (min-width: 200px) and (max-width: 456px) {
-  .header {
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    margin-top: 5%;
-    margin-bottom: 40px;
-    letter-spacing: 5px;
-  }
-  
   .container {
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 370px;
   }
   .group {
     display: flex;
@@ -592,13 +590,14 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-left: -10px;
   }
   
   .input-item input {
     flex-grow: 1;
     padding: 5px;
     border: 1px solid #ccc;
-    height: 20px;
+    height: 30px;
     outline: none;
     font-size: 15px;
     padding-left: 15px;
@@ -606,6 +605,8 @@ body {
     border-bottom-right-radius: 8px;
     background-color: #d2d3d5;
     color: #000;
+    margin-left: -10px;
+    z-index: -1;
   }
   
   .edit-button {
@@ -616,8 +617,8 @@ body {
     font-weight: 500;
     border: none;
     font-size: 14px;
-    padding: 0 8px;
-    height: 32px;
+    padding: 0 12px;
+    height: 42px;
     margin-left: 5px;
     cursor: pointer;
   }
@@ -631,7 +632,7 @@ body {
     margin-left: 5px;
     font-size: 16px;
     cursor: pointer;
-    height: 32px;
+    height: 42px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     color: #d32f2f;
@@ -652,7 +653,7 @@ body {
     background-color: #727377;
     color: white;
     border: none;
-    padding: 6px 13px;
+    padding: 10px 13px;
     margin-left: 5px;
     cursor: pointer;
     font-size: 18px;
@@ -670,9 +671,8 @@ body {
     margin: auto;
     -webkit-appearance: none;
     position: relative;
-
-    height: 46px;
-    width: 300px;
+    height: 50px;
+    width: 360px;
     cursor: pointer;
     border-radius: 0; /* iOS */
 }
@@ -684,7 +684,7 @@ body {
 ::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 10px; /* 1 */
-    height: 46px;
+    height: 50px;
     background: #fff;
     /* box-shadow: -295px 0 0 295px #e5e6e8; */
     border: 1px solid #999;
@@ -698,7 +698,7 @@ body {
 
 ::-moz-range-thumb {
     background: #fff;
-    height: 46px;
+    height: 50px;
     width: 10px;
     border: 3px solid #999;
     border-radius: 0 !important;
@@ -713,7 +713,7 @@ body {
 ::-ms-thumb { 
     background: #fff;
     border: 2px solid #999;
-    height: 46px;
+    height: 50px;
     width: 10px;
     box-sizing: border-box;
 }
@@ -729,7 +729,7 @@ body {
 ::-ms-track { 
     background: #a7c4d2;
     color: transparent;
-    height: 46px;
+    height: 50px;
     border: none;
 }
 
@@ -741,7 +741,7 @@ body {
   margin: 0 auto;
   position: relative;
   text-align: center;
-  width: 300px;
+  width: 370px;
   margin-top: 40px;
 }
 .percentageSlider-text {
@@ -757,6 +757,4 @@ body {
   color: #fff;
   font-size: 15px;
 }
-
-  
 }

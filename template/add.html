@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="../styles/edit.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Input Buttons</title>
+        <title>LED PANEL</title>
 </head>
 
 <body>
-    <div class="header">LED PANEL</div>
+    <div class="blinking">
+        <div class="blinking-text">L</div>
+        <div class="blinking-text">E</div>
+        <div class="blinking-text">D</div>
+        <div class="blinking-text"> </div>
+        <div class="blinking-text">P</div>
+        <div class="blinking-text">A</div>
+        <div class="blinking-text">N</div>
+        <div class="blinking-text">E</div>
+        <div class="blinking-text">L</div>
+    </div>
     <div class="container">
         <div class="container__form">
             <div class="container__form-title">
@@ -21,34 +31,69 @@
                 <textarea class="form-control text-area" id="exampleFormControlTextarea1" rows="3" placeholder="Nội dung"></textarea>
                 <div class="setting">
                     <label for="">Font chữ</label>
-                    <input type="text" class="form-control" id="" placeholder="Font chữ">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Arial</option>
+                        <option value="1">màu 1</option>
+                        <option value="2">màu 2</option>
+                        <option value="3">màu 3</option>
+                    </select>
                 </div>
                 <div class="d-flexs item">
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Màu</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
-                        <label for="">Tốc độ</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                    <div class="d-flex d-flexs-item">
+                        <label for="" class='label-speed'>Tốc độ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Kiểu chạy</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
                 </div>
                 <div class="d-flexs item">
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Hiệu ứng</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
-                        <label for="">Tốc độ</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                    <div class="d-flex d-flexs-item">
+                        <label for="" class='label-speed'>Tốc độ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Kiểu chạy</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -59,17 +104,32 @@
             </div>
             <div class="container__form-body">
                 <div class="d-flexs">
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Hiệu ứng</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
-                        <label for="">Tốc độ</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                    <div class="d-flex d-flexs-item">
+                        <label for="" class='label-speed'>Tốc độ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Kiểu chạy</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -80,17 +140,32 @@
             </div>
             <div class="container__form-body">
                 <div class="d-flexs">
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Hiệu ứng</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
-                        <label for="">Tốc độ</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                    <div class="d-flex d-flexs-item">
+                        <label for="" class='label-speed'>Tốc độ</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex d-flexs-item">
                         <label for="">Kiểu chạy</label>
-                        <input type="text" class="form-control" id="" placeholder="Font chữ">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arial</option>
+                            <option value="1">màu 1</option>
+                            <option value="2">màu 2</option>
+                            <option value="3">màu 3</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -100,6 +175,7 @@
         <a href="/template/editSetting.html" class="button">Xem thử</a>
         <a href="/" class="button-save">Lưu</a>
     </div>
+    <script src="../javascripts/title.js"></script>
 </body>
 
 </html>

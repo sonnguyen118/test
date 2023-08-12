@@ -101,4 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const value = slider.value;
     percentageValue.textContent = `${value}%`;
   });
+
+  // phần header chữ
 });

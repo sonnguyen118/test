@@ -8,7 +8,22 @@ body {
     width: 100vw;
 
 }
-
+.blinking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+.blinking-text {
+  font-size: 40px;
+  animation: blink 1s infinite alternate;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.blinking-text:hover {
+  cursor: pointer;
+}
 .header {
   font-size: 34px;
   text-align: center;
@@ -236,10 +251,17 @@ body {
     }
   
     .form-select {
-      padding: 5px 5px;
-      font-size: 13px;
-      border-radius: 5px; 
-    }
+      padding: 3px 3px;
+      color: #444;
+      width: 120px;
+      height: 36px;
+     }
+     select {
+       outline: 1px solid #ccc;
+       border: 1px solid #bebebe;
+       border-radius: 3px;
+     }
+
     .btn-s {
       background-color: #439ba7;
       font-size: 13px;
